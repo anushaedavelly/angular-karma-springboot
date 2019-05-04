@@ -1,0 +1,37 @@
+<div>
+  <h1>employee component</h1>
+  <form class="reg-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div class="row">
+        <div class="form-group">
+          <label for="name">Name
+            <input type="text" id="name" formControlName="name" placeholder="name" />
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="email">Email
+            <input type="email" id="email" formControlName="email" placeholder="xxx@email.com" />
+          </label>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="form-group">
+          <label for="text">Text
+            <input type="text" id="email" formControlName="text" placeholder="............." />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <button type="submit" class="custom-btn lgn-btn">Submit</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>
